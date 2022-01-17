@@ -1,0 +1,23 @@
+# Commands to start on workspace startup
+tasks:
+  - name: Dev server
+    init: npm install
+    command: npm run dev
+
+# Ports to expose on workspace startup
+ports:
+  # Nextjs
+  - port: 3000
+    onOpen: ignore
+    visibility: public
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - esbenp.prettier-vscode
+    - eamodio.gitlens
+    - pflannery.vscode-versionlens
+    - wix.vscode-import-cost
+    - formulahendry.auto-close-tag
+    - bierner.markdown-preview-github-styles
+    - pkief.material-icon-theme
